@@ -1,0 +1,56 @@
+{
+  "name": "shopkeepr",
+  "version": "0.1.1",
+  "description": "Shopkeepr makes it easy for you to add merchants/stores/shopkeepers to your JavaScript game.",
+  "main": "index.js",
+  "scripts": {
+    "tsconfig": "tsc --init --declaration --allowSyntheticDefaultImports --target esnext --outDir lib",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "bundle": "rollup -c",
+    "bundle:watch": "rollup -c --watch",
+    "test": "ava --verbose --serial"
+  },
+  "ava": {
+    "require": [
+      "./test/_setup-browser-env.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertcorponoi/shopkeepr"
+  },
+  "keywords": [
+    "shop",
+    "shopkeeper",
+    "merchant",
+    "store",
+    "game",
+    "gold",
+    "coin",
+    "currency",
+    "money"
+  ],
+  "author": "Robert Corponoi",
+  "license": "MIT",
+  "module": "shopkeepr.js",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.0",
+    "ava": "^2.4.0",
+    "browser-env": "^3.3.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.6.4"
+  }
+}
