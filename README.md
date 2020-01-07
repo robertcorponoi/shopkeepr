@@ -6,6 +6,7 @@
 
   [![NPM version](https://img.shields.io/npm/v/shopkeepr.svg?style=flat)](https://www.npmjs.com/package/shopkeepr)
   [![Known Vulnerabilities](https://snyk.io/test/github/robertcorponoi/shopkeepr/badge.svg)](https://snyk.io/test/github/robertcorponoi/shopkeepr)
+  ![npm](https://img.shields.io/npm/dt/shopkeepr)
   [![NPM downloads](https://img.shields.io/npm/dm/shopkeepr.svg?style=flat)](https://www.npmjs.com/package/shopkeepr)
   <a href="https://badge.fury.io/js/shopkeepr"><img src="https://img.shields.io/github/issues/robertcorponoi/shopkeepr.svg" alt="issues" height="18"></a>
   <a href="https://badge.fury.io/js/shopkeepr"><img src="https://img.shields.io/github/license/robertcorponoi/shopkeepr.svg" alt="license" height="18"></a>

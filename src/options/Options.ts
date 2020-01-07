@@ -60,9 +60,7 @@ export default class Options {
    * @param {Array<number>} [options.initialGold=[100]] The amount of gold this shop starts out with. If you are not using the default currency, you have to specify it in the same order as you did the currency option.
    */
   constructor(options: Object) {
-
     Object.assign(this, options);
-
   }
 
 };

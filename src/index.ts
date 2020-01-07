@@ -11,7 +11,6 @@ import Money from './interfaces/Money';
  * Shopkeepr makes it easy for you to add merchants/stores/shopkeepers to your JavaScript game.
  */
 module.exports = class Shopkeepr {
-
   /**
    * The name of this shop.
    * 

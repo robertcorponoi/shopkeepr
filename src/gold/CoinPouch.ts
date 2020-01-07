@@ -8,7 +8,6 @@ import GoldAmount from '../interfaces/Money';
  * Sets up the correct gold type and keeps track of gold.
  */
 export default class Gold {
-
   /**
    * A reference to the options for this shop.
    * 
@@ -31,11 +30,9 @@ export default class Gold {
    * @param {Options} options A reference to the options for this shop.
    */
   constructor(options: Options) {
-
     this._options = options;
 
     this._setup();
-
   }
 
   /**
@@ -44,17 +41,13 @@ export default class Gold {
    * @private
    */
   private _setup() {
-
     for (let i = 0; i < this._options.currency.length; ++i) {
-
       const name: string = this._options.currency[i];
 
       const amount: number = this._options.startingMoney[i] || 0;
 
       this._amount[name] = amount;
-
     }
-
   }
 
   /**
@@ -63,11 +56,9 @@ export default class Gold {
    * @returns {number|GoldAmount} Returns the gold as a single number if there is only one type of currency or it returns the gold as an object.
    */
   amount(): (number | GoldAmount) {
-
     if (Object.keys(this._amount).length === 1) return this._amount[Object.keys(this._amount)[0]];
 
     return this._amount;
-
   }
 
   /**
@@ -76,21 +67,15 @@ export default class Gold {
    * @param {number|GoldAmount} amount The amount of gold to add to the total.
    */
   add(amount: (number | GoldAmount)) {
-
     if (typeof amount === 'number') this._amount[Object.keys(this._amount)[0]] += amount;
 
     else {
-
       for (const currency in amount) {
-
         const gold: number = amount[currency];
 
         this._amount[currency] += gold;
-
       }
-
     }
-
   }
 
   /**
@@ -99,21 +84,14 @@ export default class Gold {
    * @param {GoldAmount} amount The amount of gold to subtract from the total.
    */
   subtract(amount: (number | GoldAmount)) {
-
     if (typeof amount === 'number') this._amount[Object.keys(this._amount)[0]] -= amount;
 
     else {
-
       for (const currency in amount) {
-
         const gold: number = amount[currency];
 
         this._amount[currency] -= gold;
-
       }
-
     }
-
   }
-
 };

@@ -1,6 +1,6 @@
 {
   "name": "shopkeepr",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Shopkeepr makes it easy for you to add merchants/stores/shopkeepers to your JavaScript game.",
   "main": "index.js",
   "scripts": {
@@ -38,19 +38,19 @@
   "license": "MIT",
   "module": "shopkeepr.js",
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.0",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/preset-typescript": "^7.7.0",
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
     "ava": "^2.4.0",
     "browser-env": "^3.3.0",
-    "rollup": "^1.26.3",
+    "rollup": "^1.28.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.7.4"
   }
 }

@@ -31,11 +31,9 @@ export default class Inventory {
    * @param {Item} item The item to add to the inventory.
    */
   addItem(item: Item) {
-
     if (!item.hasOwnProperty('name') || !item.hasOwnProperty('sellPrice') || !item.hasOwnProperty('buyPrice')) throw new Error('Items must have name and price properties');
 
     this._items.push(item);
-
   }
 
   /**
@@ -46,9 +44,7 @@ export default class Inventory {
    * @returns {Item|undefined} Returns the matching item or undefined if the item doesn't exist in this inventory.
    */
   getItem(name: string): (Item | undefined) {
-
     return this._items.find((it: Item) => it.name === name);
-
   }
 
   /**
@@ -61,15 +57,11 @@ export default class Inventory {
    * @returns {Array<Item>} Returns the matching items or an empty array.
    */
   getItems(filters: Array<string> = []): Array<Item> {
-
     if (filters.length === 0) return this._items;
 
     return this._items.filter((item: Item) => {
-
       return item.filters.some((f: string) => filters.includes(f));
-
     });
-
   };
 
   /**
@@ -78,9 +70,7 @@ export default class Inventory {
    * @param {Item} item The item to remove from the intentory.
    */
   removeItem(item: Item) {
-
     this._items = this._items.filter((it: Item) => it !== item);
-
   }
 
 };

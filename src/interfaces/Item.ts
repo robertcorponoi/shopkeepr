@@ -6,7 +6,6 @@ import GoldAmount from './Money';
  * An item can contain any number of properties but it must have a name and price.
  */
 export default interface Item {
-
   /**
    * The name of this item.
    */
@@ -26,5 +25,4 @@ export default interface Item {
    * Any other properties you wish.
    */
   [property: string]: any;
-
 };
