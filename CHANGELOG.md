@@ -1,3 +1,7 @@
+1.0.1 / 2020-01-06
+==================
+* [FEATURE] Created new build files.
+
 1.0.0 / 2020-01-06
 ==================
 * [MISC] Updated dependencies to their latest versions.

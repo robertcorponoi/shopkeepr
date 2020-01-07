@@ -1,6 +1,6 @@
 {
   "name": "shopkeepr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shopkeepr makes it easy for you to add merchants/stores/shopkeepers to your JavaScript game.",
   "main": "index.js",
   "scripts": {
